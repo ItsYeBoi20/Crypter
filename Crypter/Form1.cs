@@ -218,6 +218,7 @@ namespace Crypter
                     try
                     {
                         Methods.Aes256.Key = textBox3.Text;
+                        Methods.Aes256.IV = textBox4.Text;
                         textBox2.Text =  Methods.Aes256.Encrypt(textBox1.Text);
                     }
                     catch
